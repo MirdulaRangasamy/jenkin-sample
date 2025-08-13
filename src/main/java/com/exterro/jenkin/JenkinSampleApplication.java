@@ -13,11 +13,13 @@ public class JenkinSampleApplication {
 	
 	public static void main(String[] args) {
 		logger.info("In Sample Jenkins application executed");
+		logger.info("In Sample Jenkins application executed - Second Commit");
 		SpringApplication.run(JenkinSampleApplication.class, args);
 	}
 	
 	@PostConstruct
 	public void init() {
+		logger.info("In Sample Jenkins application started - Second Commit");
 		logger.info("In Sample Jenkins application started");
 	}
 

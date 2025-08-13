@@ -13,6 +13,7 @@ class JenkinSampleApplicationTests {
 	@Test
 	void contextLoads() {
 		logger.info("In Sample Jenkins application started - Test case Running...");
+		logger.info("$$$$$In Sample Jenkins application started - Test case Running - Second Commit...");
 		Assertions.assertTrue(true);
 	}
 
