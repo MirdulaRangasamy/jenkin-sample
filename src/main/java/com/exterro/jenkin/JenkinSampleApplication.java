@@ -12,7 +12,7 @@ public class JenkinSampleApplication {
 	public static Logger logger = LoggerFactory.getLogger(JenkinSampleApplication.class);
 	
 	public static void main(String[] args) {
-		logger.info("In Sample Jenkins application executed")
+		logger.info("In Sample Jenkins application executed");
 		logger.info("In Sample Jenkins application executed - Third Commit");
 		SpringApplication.run(JenkinSampleApplication.class, args);
 	}
