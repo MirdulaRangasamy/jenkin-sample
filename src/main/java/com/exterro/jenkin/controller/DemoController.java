@@ -5,6 +5,7 @@ package com.exterro.jenkin.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author MirdulaRangasamy
@@ -16,5 +17,11 @@ public class DemoController {
 	@RequestMapping("home")
 	public String getHome() {
 		return "home.html";
+	}
+	
+	@RequestMapping("message")
+	@ResponseBody
+	public String getMessage() {
+		return "Hello World";
 	}
 }
