@@ -3,9 +3,13 @@
  */
 package com.exterro.jenkin.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+
 
 /**
  * @author MirdulaRangasamy
@@ -14,6 +18,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class DemoController {
+	public static Logger logger = LoggerFactory.getLogger(DemoController.class);
+
 	@RequestMapping("home")
 	public String getHome() {
 		return "home.html";
@@ -22,6 +28,7 @@ public class DemoController {
 	@RequestMapping("message")
 	@ResponseBody
 	public String getMessage() {
+		logger.info("msg");
 		return "Hello World";
 	}
 }
