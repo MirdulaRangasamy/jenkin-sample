@@ -19,38 +19,38 @@ import com.exterro.jenkin.service.CarService;
  *
  * @date 18 Aug 2025
  */
-@Controller
+//@Controller
 public class CarController {
-	@Autowired
-	private CarService carSvc;
-	
-	@RequestMapping("addCar")
-	@ResponseBody
-	public ResponseEntity<Car> addCar(Car car){
-		return ResponseEntity.ok(carSvc.addCar(car));
-	}
-	
-	@RequestMapping("viewCar")
-	@ResponseBody
-	public ResponseEntity<Car> viewCar(String regNo){
-		return ResponseEntity.ok(carSvc.getCar(regNo));
-	}
-	
-	@RequestMapping("viewAllCars")
-	@ResponseBody
-	public ResponseEntity<List<Car>> viewAllCars(){
-		return ResponseEntity.ok(carSvc.getAllCars());
-	}
-
-	@RequestMapping("updateCar")
-	@ResponseBody
-	public ResponseEntity<Car> updateCar(Car car){
-		return ResponseEntity.ok(carSvc.updateCar(car));
-	}
-	
-	@RequestMapping("deleteCar")
-	@ResponseBody
-	public ResponseEntity<String> deleteCar(String regNo){
-		return ResponseEntity.ok(carSvc.deleteCar(regNo));
-	}
+//	@Autowired
+//	private CarService carSvc;
+//	
+//	@RequestMapping("addCar")
+//	@ResponseBody
+//	public ResponseEntity<Car> addCar(Car car){
+//		return ResponseEntity.ok(carSvc.addCar(car));
+//	}
+//	
+//	@RequestMapping("viewCar")
+//	@ResponseBody
+//	public ResponseEntity<Car> viewCar(String regNo){
+//		return ResponseEntity.ok(carSvc.getCar(regNo));
+//	}
+//	
+//	@RequestMapping("viewAllCars")
+//	@ResponseBody
+//	public ResponseEntity<List<Car>> viewAllCars(){
+//		return ResponseEntity.ok(carSvc.getAllCars());
+//	}
+//
+//	@RequestMapping("updateCar")
+//	@ResponseBody
+//	public ResponseEntity<Car> updateCar(Car car){
+//		return ResponseEntity.ok(carSvc.updateCar(car));
+//	}
+//	
+//	@RequestMapping("deleteCar")
+//	@ResponseBody
+//	public ResponseEntity<String> deleteCar(String regNo){
+//		return ResponseEntity.ok(carSvc.deleteCar(regNo));
+//	}
 }
