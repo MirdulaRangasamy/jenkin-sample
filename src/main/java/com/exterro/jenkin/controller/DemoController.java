@@ -29,6 +29,7 @@ public class DemoController {
 	@ResponseBody
 	public String getMessage() {
 		logger.info("msg");
+		logger.info("msg111111111111111111111111111111");
 		return "Hello World";
 	}
 }
