@@ -30,6 +30,7 @@ public class DemoController {
 	public String getMessage() {
 		logger.info("msg");
 		logger.info("msg111111111111111111111111111111");
+		logger.info("msg55555555555555555555555");
 		return "Hello World";
 	}
 }
