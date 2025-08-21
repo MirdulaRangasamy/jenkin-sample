@@ -16,6 +16,7 @@ public class JenkinSampleApplication extends SpringBootServletInitializer{
 	public static void main(String[] args) {
 		logger.info("In Sample Jenkins application executed");
 		logger.info("In Sample Jenkins application executed - Third Commit");
+		logger.info("$$$$$$$$$$$$$$$$$$   In Sample Jenkins application executed");
 		SpringApplication.run(JenkinSampleApplication.class, args);
 	}
 	
